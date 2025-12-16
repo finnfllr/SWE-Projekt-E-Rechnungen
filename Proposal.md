@@ -82,7 +82,7 @@ Der funktionale Kern des Systems liegt in der durchgehenden Automatisierung des 
 
 # 3. Mindmap
 
-![Mindmap](Mindmap.png)
+![Mindmap](https://github.com/finnfllr/SWE-Projekt/blob/main/Images/Mindmap.png)
 *Abbildung: Mindmap zum E-Rechnungsprojekt*
 
 
@@ -343,3 +343,4 @@ Die Entwicklung erfolgt iterativ in kleinen Abschnitten, um Flexibilität zu gew
 Auf dem Markt existieren diverse Produkte, die die Erstellung von E-Rechnungen ermöglichen. Diese Produkte konzentrieren sich jedoch in der Regel auf spezifische Aspekte, wie beispielsweise die Erstellung und den Versand, vernachlässigen jedoch die Überwachung von Fristen und die Validierung. Unser Produkt bietet eine umfassende Lösung, die all diese Aspekte abdeckt, und zeichnet sich durch eine benutzerfreundliche Bedienung aus, da sämtliche Prozesse vollautomatisiert ablaufen. Die Mitarbeiter werden über fällige Zahlungen informiert und haben die Möglichkeit, E-Rechnungen manuell über eine Web-Anwendung zu erstellen.
 
 ---
+
