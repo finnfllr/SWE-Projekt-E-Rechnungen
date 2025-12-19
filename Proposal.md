@@ -44,6 +44,8 @@ Dieses Produkt umfasst ein Softwaresystem zur automatisierten Erzeugung elektron
 ---
 # 2. Produktbeschreibung: „Rechnung 4.0“
 
+![Produktbeschreibung](https://github.com/finnfllr/SWE-Projekt-E-Rechnungen/blob/main/Images/Produktbeschreibung.png)
+
 1. **Allgemeine Beschreibung**
 Das geplante Produkt trägt den Titel „Automatisches E-Rechnungsmodul“ und umfasst ein Softwaresystem zur Erstellung und Verarbeitung elektronischer Rechnungen. Die Anwendung erfüllt die in Deutschland geltenden Anforderungen an die elektronische Rechnungsstellung und orientiert sich an den etablierten Standards XRechnung und ZUGFeRD. Damit werden die Vorgaben der EN 16931 sowie die Richtlinien der EU-Richtlinie 2014/55/EU eingehalten.
 Als Grundlage nutzt das System vorhandene Unternehmensdaten, beispielsweise aus einem ERP-System. Auf dieser Basis entsteht eine verlässliche Lösung zur normgerechten Erzeugung elektronischer Rechnungen.
@@ -343,6 +345,7 @@ Die Entwicklung erfolgt iterativ in kleinen Abschnitten, um Flexibilität zu gew
 Auf dem Markt existieren diverse Produkte, die die Erstellung von E-Rechnungen ermöglichen. Diese Produkte konzentrieren sich jedoch in der Regel auf spezifische Aspekte, wie beispielsweise die Erstellung und den Versand, vernachlässigen jedoch die Überwachung von Fristen und die Validierung. Unser Produkt bietet eine umfassende Lösung, die all diese Aspekte abdeckt, und zeichnet sich durch eine benutzerfreundliche Bedienung aus, da sämtliche Prozesse vollautomatisiert ablaufen. Die Mitarbeiter werden über fällige Zahlungen informiert und haben die Möglichkeit, E-Rechnungen manuell über eine Web-Anwendung zu erstellen.
 
 ---
+
 
 
 
