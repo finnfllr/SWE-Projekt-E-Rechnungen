@@ -90,7 +90,7 @@ Diese Anforderung ist insbesondere im Kontext steuerlich relevanter Rechnungsdat
 
 ## 4.3 Skalierbarkeit
 
-Das System muss so konzipiert sein, dass es leicht erweiterbar ist und mit wachsenden Anforderungen Schritt halten kann. Dazu gehört insbesondere die Fähigkeit, steigende Rechnungsvolumina zu verarbeiten, zusätzliche Mandanten einzubinden sowie neue funktionale Erweiterungen zu integrieren, ohne dass es zu Performance-Verlusten kommt.
+Das System muss so konzipiert sein, dass es leicht erweiterbar ist und mit wachsenden Anforderungen Schritt halten kann. Dazu gehört insbesondere die Fähigkeit, steigende Rechnungsvolumina zu verarbeiten, zusätzliche Kunden einzubinden sowie neue funktionale Erweiterungen zu integrieren, ohne dass es zu Performance verlusten kommt.
 
 Die Skalierbarkeit stellt sicher, dass das System nicht nur für den initialen Einsatz geeignet ist, sondern auch langfristig genutzt und weiterentwickelt werden kann. Erweiterungen dürfen keine negativen Auswirkungen auf bestehende Funktionen oder die Systemstabilität haben. Ziel ist eine flexible Architektur, die Wachstum unterstützt, ohne grundlegende Anpassungen am Gesamtsystem erforderlich zu machen.
 
