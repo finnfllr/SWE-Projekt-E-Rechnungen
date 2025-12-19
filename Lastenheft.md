@@ -71,7 +71,52 @@ Um die zeitliche Abfolge der Mahnung sicherzustellen, ist folgender Ablauf defin
 - Zuverlässigkeit: Bei SMTP-Fehlern (z. B. Bounces, Server nicht erreichbar) muss eine automatische Wiederholungslogik (Retry 4xx) greifen.
 - Audit-Trail: Jede Änderung am Status einer Rechnung sowie manuelle Eingriffe müssen unveränderbar protokolliert werden (Logging für GoBD).
 - Gesetzliche Wartbarkeit: Das System muss modular geschaffen sein, dass Gesetztesänderungen durch Updates der Validierungsschemata  ohne Änderung der Kernlogik erweitert werden können. 
-- 
+
+## 4. Nicht-funktionale Anforderungen (Qualitätssicherung)
+
+Dieses Kapitel beschreibt die nicht-funktionalen Anforderungen an das System zur automatisierten Erzeugung elektronischer Rechnungen. Nicht-funktionale Anforderungen definieren qualitative Eigenschaften des Systems und stellen sicher, dass die funktionalen Anforderungen unter realen Einsatzbedingungen zuverlässig, korrekt und regelkonform erfüllt werden. Sie sind maßgeblich für die Qualität, Wartbarkeit und Abnahmefähigkeit des Gesamtsystems.
+
+## 4.1 Performance
+
+Die Performance des Systems ist so auszulegen, dass auch bei hohem Rechnungsaufkommen eine reibungslose und verzögerungsfreie Verarbeitung gewährleistet ist. Insbesondere die Validierung einer Rechnung muss innerhalb von unter 150 Millisekunden erfolgen. Diese Anforderung ist notwendig, um Massenverarbeitungen, beispielsweise im Rahmen von Tages- oder Monatsläufen, ohne spürbare Verzögerungen durchführen zu können.
+
+Eine konstante und vorhersehbare Validierungsdauer stellt sicher, dass das System sowohl im Einzelbetrieb als auch bei der Verarbeitung großer Rechnungsvolumina effizient arbeitet. Performance-Einbußen bei steigender Last sind zu vermeiden, da sie den automatisierten Rechnungsprozess erheblich beeinträchtigen würden.
+
+## 4.2 Präzision
+
+Die korrekte Verarbeitung von Geldbeträgen stellt eine zentrale Qualitätsanforderung dar. Alle Währungs- und Betragsberechnungen müssen daher konsequent unter Verwendung von java.math.BigDecimal durchgeführt werden. Dadurch wird sichergestellt, dass Rundungsfehler, wie sie bei der Verwendung von Gleitkommazahlen auftreten können, ausgeschlossen werden.
+
+Diese Anforderung ist insbesondere im Kontext steuerlich relevanter Rechnungsdaten von hoher Bedeutung, da bereits geringe Abweichungen zu fehlerhaften Rechnungen oder Inkonsistenzen führen können. Die präzise Berechnung aller Beträge trägt somit maßgeblich zur inhaltlichen Korrektheit und rechtlichen Verlässlichkeit der erzeugten Rechnungen bei.
+
+## 4.3 Skalierbarkeit
+
+Das System muss so konzipiert sein, dass es leicht erweiterbar ist und mit wachsenden Anforderungen Schritt halten kann. Dazu gehört insbesondere die Fähigkeit, steigende Rechnungsvolumina zu verarbeiten, zusätzliche Mandanten einzubinden sowie neue funktionale Erweiterungen zu integrieren, ohne dass es zu Performance-Verlusten kommt.
+
+Die Skalierbarkeit stellt sicher, dass das System nicht nur für den initialen Einsatz geeignet ist, sondern auch langfristig genutzt und weiterentwickelt werden kann. Erweiterungen dürfen keine negativen Auswirkungen auf bestehende Funktionen oder die Systemstabilität haben. Ziel ist eine flexible Architektur, die Wachstum unterstützt, ohne grundlegende Anpassungen am Gesamtsystem erforderlich zu machen.
+
+## 4.4 Rechtssicherheit und Compliance
+
+Das System muss vollständig und zu 100 % konform zur Norm EN 16931 sein. Die Einhaltung dieser Norm ist Voraussetzung für eine rechtssichere elektronische Rechnungsstellung und stellt sicher, dass die erzeugten Rechnungen den geltenden gesetzlichen und fachlichen Anforderungen entsprechen.
+
+Änderungen an den zugrunde liegenden Validierungsstandards, beispielsweise neue Versionen bestehender Rechnungsschemata, müssen durch die Aktualisierung der entsprechenden Schemadateien integrierbar sein. Dabei darf keine Anpassung der Kernlogik des Systems erforderlich sein. Diese Anforderung gewährleistet, dass das System auch bei zukünftigen Anpassungen der Standards weiterhin regelkonform eingesetzt werden kann.
+
+## 4.5 Zuverlässigkeit
+
+Ein hoher Grad an Zuverlässigkeit ist für den automatisierten Rechnungsprozess essenziell. Insbesondere beim Versand elektronischer Rechnungen muss das System in der Lage sein, mit temporären technischen Problemen umzugehen. Treten beim Versand SMTP-Fehler auf, beispielsweise durch nicht erreichbare Server oder sogenannte Bounces, muss automatisch eine Wiederholungslogik greifen.
+
+Bei temporären Fehlern der Kategorie 4xx ist ein erneuter Versandversuch auszulösen, ohne dass ein manueller Eingriff erforderlich ist. Dadurch wird sichergestellt, dass Rechnungen nicht verloren gehen und der Versandprozess auch bei kurzzeitigen Störungen stabil und zuverlässig bleibt.
+
+## 4.6 Audit-Trail
+
+Zur Sicherstellung der Nachvollziehbarkeit und zur Erfüllung gesetzlicher Dokumentationsanforderungen muss das System einen vollständigen und unveränderbaren Audit-Trail bereitstellen. Jede Änderung am Status einer Rechnung, von der Erstellung über die Validierung bis hin zu Mahn- oder Eskalationsschritten, ist lückenlos zu protokollieren.
+
+Darüber hinaus müssen auch manuelle Eingriffe, beispielsweise bei der Fehlerbehandlung oder bei Entscheidungen im Mahnwesen, nachvollziehbar erfasst werden. Die Protokollierung dient der internen Kontrolle sowie der externen Prüfung und darf nachträglich nicht manipuliert werden.
+
+## 4.7 Gesetzliche Wartbarkeit
+
+Das System muss modular aufgebaut sein, sodass gesetzliche oder normative Änderungen ohne Eingriffe in die bestehende Kernlogik umgesetzt werden können. Insbesondere Anpassungen an gesetzlichen Vorgaben oder Validierungsregeln sollen ausschließlich durch Updates der entsprechenden Validierungsschemata erfolgen.
+
+Diese gesetzliche Wartbarkeit stellt sicher, dass das System langfristig einsetzbar bleibt und auf neue Anforderungen reagieren kann, ohne dass umfangreiche technische Umbauten notwendig werden. Dadurch werden Wartungsaufwand und Fehleranfälligkeit reduziert und die Zukunftssicherheit des Systems erhöht.
 
 ## 5. Testplan
 ## Randinformationen mit denen wir arbeiten müssen
