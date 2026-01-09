@@ -21,10 +21,10 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | Schritt | Akteur | Ablauf | Verzweigung |
 | :--- | :--- | :--- | :--- |
 | **1** | **Anmeldung** | | |
-| 1.1 | Anwender | Rechnung erstelllen | E1 |
+| 1.1 | Anwender | Rechnung erstelllen |  |
 | 1.2 | Anwender | Validierund durschüfhren | |
-| 1.3 | Anwender | E-Rechnung versenden | A1 |
-| 1.4 | Anwender | Zahlungeingang prüfen | A2 |
+| 1.3 | Anwender | E-Rechnung versenden |  |
+| 1.4 | Anwender | Zahlungeingang prüfen |  |
 | **Ausnahmen** |  |  |  |
 | A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
 | A2 | Mitarbeiter | Mahnung freigeben |  |
