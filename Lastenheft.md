@@ -283,7 +283,8 @@ Systemkonfiguration (keine Benutzeraktion!)
 <img width="896" height="483" alt="Bildschirmfoto 2025-12-18 um 20 25 48" src="https://github.com/user-attachments/assets/6acb1d77-7a47-4935-ad3b-655b198516a2" />
 
 
-
+## Produkt und Projektdokumentation
+<img width="1024" height="322" alt="Aufgabe 4_Erstellung der Produkt und Projektdokumentation_deliverry" src="https://github.com/user-attachments/assets/10455da0-2403-4770-b304-630bff2011fb" />
 
 
 
