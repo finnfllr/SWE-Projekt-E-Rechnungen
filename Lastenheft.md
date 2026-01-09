@@ -24,16 +24,12 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | 1.1 | Anwender | Rechnung erstelllen | E1 |
 | 1.2 | Anwender | Validierund durschüfhren | |
 | 1.3 | Anwender | E-Rechnung versenden | A1 |
-| 1.4 | Webbrowser | Zeigt die Webseite an | A2 |
-| 1.5 | Anwender | • navigiert auf der Website | |
-| 1.6 | Anwender | • wählt Option „verschlüsselte E-Mail erstellen“<br>• drückt „Senden“ Button | |
-| 1.7 | System/UA | Modale Dialogbox: Forderte Anwender auf, Senden der zu verschlüsselnden Dokumente zu bestätigen | |
-| 1.8 | Anwender | Ausnahme: Widerruft Senden/ Verschlüsselung bzw. klickt Dialogbox weg | A1 |
-| 1.9 | System | Modale Dialogbox: Anwender wird aufgefordert Auth-PIN einzugeben | |
-| 1.10 | System | Ausnahme: Anwender klickt Dialogbox weg | A1 |
-| 1.11 | Anwender | Gibt PIN ein (Eingabe PIN) | |
-
-
+| 1.4 | Anwender | Zahlungeingang prüfen | A2 |
+| **Ausnahmen** |  |  |  |
+| :--- | :--- | :--- | :--- |
+| A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
+| A2 | Mitarbeiter | Mahnung freigeben |  |
+| E1 | System | Initialisierung der Mahnung
 
 
 Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall („Discovery Layer“).
