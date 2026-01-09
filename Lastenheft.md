@@ -4,6 +4,38 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 
 ## 2. Funktionale Anforderungen
 ### 2.1. Use Cases
+| Attribut | Beschreibung |
+| :--- | :--- |
+| **Autor** | Finn Feller, Mulugeta Gebregergis, Nikola Kostic, Nurettin Tasoluk, Noel Hildenbrand, Gian-Luca Sarcone |
+| **Kurzbeschreibung** | Rechnungserstellung |
+| **Primärer Akteur** | ERP-System, Zeitsteuerung |
+| **Sekundärer Akteur** | Mitarbeiter |
+| **Auslöser, Vorbedingung** | Zeit |
+| **Ergebnisse, Nachbedingungen** | E-Rechnung in ZUGFeRD |
+| **Technische Randbedingungen** | 1. ERP-System<br>2. Trigger<br>3. Sytem muss laufen |
+| **Allgemeine Bemerkungen** | funktionsfähig |
+| **Offene Punkte** | |
+
+### Ablauf
+
+| Schritt | Akteur | Ablauf | Verzweigung |
+| :--- | :--- | :--- | :--- |
+| **1** | **Anmeldung** | | |
+| 1.1 | Anwender | Rechnung erstelllen | E1 |
+| 1.2 | Anwender | Validierund durschüfhren | |
+| 1.3 | Anwender | E-Rechnung versenden | A1 |
+| 1.4 | Webbrowser | Zeigt die Webseite an | A2 |
+| 1.5 | Anwender | • navigiert auf der Website | |
+| 1.6 | Anwender | • wählt Option „verschlüsselte E-Mail erstellen“<br>• drückt „Senden“ Button | |
+| 1.7 | System/UA | Modale Dialogbox: Forderte Anwender auf, Senden der zu verschlüsselnden Dokumente zu bestätigen | |
+| 1.8 | Anwender | Ausnahme: Widerruft Senden/ Verschlüsselung bzw. klickt Dialogbox weg | A1 |
+| 1.9 | System | Modale Dialogbox: Anwender wird aufgefordert Auth-PIN einzugeben | |
+| 1.10 | System | Ausnahme: Anwender klickt Dialogbox weg | A1 |
+| 1.11 | Anwender | Gibt PIN ein (Eingabe PIN) | |
+
+
+
+
 Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall („Discovery Layer“).
 ![Use-Case-Diagramm](https://github.com/finnfllr/SWE-Projekt-E-Rechnungen/blob/main/Images/Use%20Case.png)
 
