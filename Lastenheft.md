@@ -53,6 +53,8 @@ Erläuterung der Komponenten:
   - Der Lebenszyklus der Rechnung wird über das Enum `RechnungsStatus` gesteuert. Dieses bildet die logische Kette von der Erstellung (`ERSTELLT`) über die Prüfung (`VALIDIERUNG_OK` / `FEHLER`) bis hin zum Mahnwesen (`GEMAHNT_STUFE_1` bis `BEI_INKASSO`) ab .
 
   - Die Klasse `RechnungsFehler` speichert Validierungsprobleme, damit diese im Dashboard angezeigt werden können.
+  ![Zustandsautomat](https://github.com/finnfllr/SWE-Projekt-E-Rechnungen/blob/main/Images/Zustandsautomat.png)
+
 
 - Kern-Services (Core Engine):
 
