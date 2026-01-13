@@ -24,12 +24,12 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | 1.1 | ERP | Rechnung erstelllen | Wenn Validierung fehlschlägt → A1 |
 | 1.2 | ERP | Validierund durschüfhren |  |
 | 1.3 | ERP | E-Rechnung versenden |  |
-| 1.4 | Zeitsteuerung | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → E1 |
+| 1.4 | Zeitsteuerung | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → E1.1 |
 | **Ausnahmen** |  |  |  |
 | A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
-| A2 | Mitarbeiter | Mahnung freigeben |  |
 | **Erweiterung** |  |  |  |
-| E1 | Zeitsteureung | Initialisierung der Mahnung (inkl. Mahnprozess anstoßen) |  |
+| E1.1 | Zeitsteuerung | Mahnung anstoßen |  
+| E1.2 | Mitarbeiter | Mahnung freigeben |  
 
 
 Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall.
