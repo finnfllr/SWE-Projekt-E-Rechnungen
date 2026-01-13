@@ -22,14 +22,14 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | :--- | :--- | :--- | :--- |
 | **1** | **Anmeldung** | | |
 | 1.1 | Anwender | Rechnung erstelllen |  |
-| 1.2 | Anwender | Validierund durschüfhren | |
+| 1.2 | Anwender | Validierund durschüfhren | Wenn Validierung fehlschlägt → A1 |
 | 1.3 | Anwender | E-Rechnung versenden |  |
-| 1.4 | Anwender | Zahlungeingang prüfen |  |
+| 1.4 | Anwender | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → A2 / E1 |
 | **Ausnahmen** |  |  |  |
 | A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
 | A2 | Mitarbeiter | Mahnung freigeben |  |
 | **Erweiterung** |  |  |  |
-| E1 | System | Initialisierung der Mahnung
+| E1 | System | nitialisierung der Mahnung (inkl. Mahnprozess anstoßen) |  |
 
 
 Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall („Discovery Layer“).
