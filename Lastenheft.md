@@ -32,7 +32,7 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | E1 | System | nitialisierung der Mahnung (inkl. Mahnprozess anstoßen) |  |
 
 
-Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall („Discovery Layer“).
+Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall.
 ![Use-Case-Diagramm](https://github.com/finnfllr/SWE-Projekt-E-Rechnungen/blob/main/Images/Use%20Case.png)
 
 ### 2.2. Prozessabläufe
