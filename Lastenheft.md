@@ -21,10 +21,10 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | Schritt | Akteur | Ablauf | Verzweigung |
 | :--- | :--- | :--- | :--- |
 | **1** | **Anmeldung** | | |
-| 1.1 | ERP | Rechnung erstelllen |  |
-| 1.2 | ERP | Validierund durschüfhren | Wenn Validierung fehlschlägt → A1 |
+| 1.1 | ERP | Rechnung erstelllen | Wenn Validierung fehlschlägt → A1 |
+| 1.2 | ERP | Validierund durschüfhren |  |
 | 1.3 | ERP | E-Rechnung versenden |  |
-| 1.4 | ERP | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → A2 / E1 |
+| 1.4 | Zeitsteuerung | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → E1 |
 | **Ausnahmen** |  |  |  |
 | A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
 | A2 | Mitarbeiter | Mahnung freigeben |  |
