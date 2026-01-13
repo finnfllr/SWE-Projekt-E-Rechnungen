@@ -29,7 +29,7 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | A1 | Mitarbeiter | Validierungsfehler korriegieren |  |
 | A2 | Mitarbeiter | Mahnung freigeben |  |
 | **Erweiterung** |  |  |  |
-| E1 | System | nitialisierung der Mahnung (inkl. Mahnprozess anstoßen) |  |
+| E1 | System | Initialisierung der Mahnung (inkl. Mahnprozess anstoßen) |  |
 
 
 Das System unterscheidet zwischen vollautomatisierten Prozessen (Regelfall) und manuellen Eingriffen durch Mitarbeiter im Fehlerfall.
