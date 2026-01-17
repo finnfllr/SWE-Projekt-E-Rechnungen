@@ -149,6 +149,203 @@ Das System muss modular aufgebaut sein, sodass gesetzliche oder normative Änder
 Diese gesetzliche Wartbarkeit stellt sicher, dass das System langfristig einsetzbar bleibt und auf neue Anforderungen reagieren kann, ohne dass umfangreiche technische Umbauten notwendig werden. Dadurch werden Wartungsaufwand und Fehleranfälligkeit reduziert und die Zukunftssicherheit des Systems erhöht.
 
 ## 5. Testplan
+
+## 5.3 Marktabschäzung 
+
+# Zielmarkt 
+
+Der Zielmarkt von Rechnung 4.0 umfasst primär den B2B-Sektor in Deutschland, insbesondere:
+
+- Kleine und mittlere Unternehmen (KMU)
+
+- Steuerberater und Buchhaltungsbüros
+
+- Unternehmen mit ERP-gestützter Rechnungsstellung
+
+- Öffentliche Auftragnehmer (B2G)
+
+Durch die gesetzliche Verpflichtung zur elektronischen Rechnung ab dem 01.01.2025 im B2B-Umfeld steigt die Nachfrage nach konformen, automatisierten und integrierbaren E-Rechnungslösungen signifikant. Besonders KMU stehen vor der Herausforderung, bestehende Systeme anzupassen oder neue Module einzuführen
+
+# Marktabschätzung und Wettbewerbssituation – Rechnung 4.0
+
+## Marktumfeld und Ausgangslage
+Mit der Einführung der verpflichtenden elektronischen Rechnung im B2B-Umfeld ab dem 1. Januar 2025 hat sich der Markt für Rechnungssoftware grundlegend verändert. Unternehmen sind gesetzlich verpflichtet, strukturierte elektronische Rechnungen nach der europäischen Norm EN 16931 empfangen und verarbeiten zu können. Insbesondere kleine und mittlere Unternehmen stehen dadurch unter hohem Anpassungsdruck, da bestehende Prozesse häufig noch papier- oder PDF-basiert sind.
+
+Der Markt für E-Rechnungslösungen ist aktuell stark fragmentiert. Es existieren zahlreiche Anbieter, die jeweils Teilaspekte des Rechnungsprozesses abdecken. Eine durchgängige, vollständig automatisierte Lösung, die den gesamten Lebenszyklus einer Rechnung berücksichtigt, ist jedoch selten.
+
+# Wettbewerbssituation
+
+## ERP- und Buchhaltungssysteme 
+Große ERP- und Buchhaltungssysteme integrieren E-Rechnungsfunktionen zunehmend direkt in ihre Kernprozesse. Diese Systeme bieten eine hohe Funktionstiefe, sind jedoch häufig mit hohen Lizenzkosten, langen Einführungszeiten und komplexem Customizing verbunden. Für viele KMU ist der Umstieg oder Ausbau eines solchen Systems wirtschaftlich oder organisatorisch nicht sinnvoll.
+
+Zudem endet die Automatisierung in vielen ERP-Lösungen bereits nach der Rechnungserstellung oder dem Versand. Aspekte wie technische Zustellprüfung, detaillierte Validierung, Fristenüberwachung und automatisiertes Mahnwesen sind oft nur eingeschränkt oder gar nicht vorhanden.
+
+# Webbasierte Rechnungstools 
+
+Webbasierte Rechnungstools zeichnen sich durch einfache Bedienbarkeit und geringe Einstiegshürden aus. Sie ermöglichen die manuelle Erstellung von Rechnungen und bieten häufig Exportfunktionen für ZUGFeRD oder XRechnung.
+
+Diese Lösungen sind jedoch stark benutzergetrieben und kaum für automatisierte Prozesse geeignet. Eine direkte Anbindung an ERP- oder CRM-Systeme ist meist nur rudimentär vorhanden. Bei steigenden Rechnungsvolumina stoßen diese Tools schnell an ihre Grenzen, da sie keine durchgängige Prozesslogik unterstützen.
+
+# Netzwerk- und Plattformlösungen (PEPPOL / EDI)
+Netzwerkbasierte Lösungen gewährleisten hohe Compliance und sind insbesondere im B2G-Bereich etabliert. Sie bieten strukturierte Übertragungswege und Validierungsmechanismen, sind jedoch technisch komplex und kostenintensiv.
+
+Für kleinere Unternehmen stellen diese Plattformen häufig eine Überdimensionierung dar, da Governance, Zertifizierungen und Betrieb einen erheblichen organisatorischen Aufwand verursachen.
+
+# Entwickler- und API-basierte Lösungen
+
+Bibliotheken und APIs ermöglichen die technische Erstellung und Validierung elektronischer Rechnungen. Diese Lösungen sind leistungsfähig, setzen jedoch ein hohes Maß an Integrationskompetenz voraus. Sie liefern keine vollständigen Geschäftsprozesse, sondern lediglich technische Bausteine.
+
+Eine übergeordnete Prozesssteuerung, ein Statusmodell, ein Mahnwesen oder ein revisionssicheres Audit-Trail-Konzept fehlen in der Regel vollständig.
+
+# Positionierung und Mehrwert von Rechnung 4.0 
+
+Rechnung 4.0 positioniert sich bewusst nicht als weiteres Rechnungstool, sondern als prozessgetriebenes Automatisierungsmodul, das bestehende Systeme ergänzt. Der zentrale Mehrwert liegt in der Abbildung des vollständigen Rechnungslebenszyklus.
+
+Das System übernimmt strukturierte Daten aus vorgelagerten ERP- oder CRM-Systemen, erzeugt normkonforme E-Rechnungen, validiert diese vor dem Versand und überwacht den gesamten weiteren Verlauf bis zum Zahlungseingang. Nur bei Abweichungen oder Fehlern wird ein manueller Eingriff erforderlich.
+
+Besonders hervorzuheben sind folgende Aspekte:
+
+- Vollständige Automatisierung nach dem Prinzip „Management by Exception“
+
+- Vorangestellte Validierung als Qualitätssicherung vor dem Versand
+
+- Technische Zustellprüfung mit Statusrückführung in den Rechnungsvorgang
+
+- Integrierte Zahlungsüberwachung und mehrstufiges Mahnwesen
+
+- Lückenlose Statushistorie und Protokollierung als Grundlage für Auditierbarkeit
+
+Damit schließt Rechnung 4.0 eine Marktlücke zwischen einfachen UI-Tools und komplexen Enterprise-Lösungen.
+
+# Finanzierungskonzept 
+
+## Zielsetzung der Finanzierung
+Das Finanzierungskonzept unterscheidet zwischen der projektbezogenen Studienphase und einer potenziellen späteren Produktivphase. Während im Studienkontext keine tatsächlichen Personalkosten anfallen, ist es für eine realistische Bewertung erforderlich, kalkulatorische Kosten anzusetzen.
+
+Diese Vorgehensweise ermöglicht eine realitätsnahe Einschätzung des wirtschaftlichen Aufwands und verdeutlicht, welche Ressourcen für eine Marktreife notwendig wären.
+
+# Erlös- und Refinanzierungsmodelle
+
+## Abonnementmodell (Software-as-a-Service)
+
+Beim Abonnementmodell wird Rechnung 4.0 als cloudbasierte Lösung bereitgestellt. Kunden zahlen eine monatliche oder jährliche Gebühr, die sich nach Anzahl der Mandanten, Rechnungsvolumen oder Funktionsumfang staffelt.
+
+Dieses Modell ermöglicht planbare Einnahmen und finanziert laufende Wartung, Support sowie notwendige Anpassungen an gesetzliche oder normative Änderungen. Für Kunden entstehen transparente und kalkulierbare Kosten, ohne hohe Anfangsinvestitionen.
+
+# Lizenzmodell (On-Premise) 
+
+Alternativ kann Rechnung 4.0 als lokal betriebene Software lizenziert werden. Kunden zahlen eine einmalige Lizenzgebühr sowie eine jährliche Wartungspauschale für Updates und Support.
+
+Dieses Modell eignet sich insbesondere für Unternehmen mit hohen Datenschutzanforderungen oder eigener IT-Infrastruktur. Die Wartungspauschale stellt sicher, dass Anpassungen an neue Rechnungsstandards dauerhaft refinanziert werden können.
+
+# Nutzungsabhängiges Abrechnungsmodell
+
+Beim nutzungsabhängigen Modell erfolgt die Abrechnung pro erzeugter oder validierter Rechnung. Dieses Modell senkt die Einstiegshürde für kleinere Unternehmen und skaliert mit dem tatsächlichen Nutzungsumfang.
+
+Gerade für API-basierte Integrationen stellt dieses Modell eine flexible und faire Abrechnungsform dar.
+
+# Integrations- und Projektgeschäft 
+
+Zusätzlich können Einnahmen durch Integrationsprojekte generiert werden, beispielsweise durch ERP-Anbindungen, individuelle Mapping-Regeln oder Schulungen. Dieses Modell ist im B2B-Softwareumfeld etabliert und ermöglicht frühzeitigen Cashflow.
+
+# White-Label- und OEM-Partnerschaften 
+
+Rechnung 4.0 kann als White-Label-Modul in bestehende ERP- oder Buchhaltungssysteme integriert werden. Die Abrechnung erfolgt über Lizenzmodelle oder Umsatzbeteiligungen.
+
+Dieses Modell erlaubt eine schnelle Marktdurchdringung über bestehende Kundenstämme von Softwareherstellern.
+
+# Grobschätzung des Aufwands 
+## Rahmenbedingungen 
+- Projektteam: 6 Mitglieder
+
+- Standort: Hessen
+
+- Projektlaufzeit: ca. 4 Monate
+
+- Ansatz: kalkulatorische Personalkosten + reale Sachkosten
+
+Die Stundensätze orientieren sich an konservativen, realistischen Ansätzen für studentische Projektarbeit auf Junior-IT-Niveau in Deutschland.
+
+# Gesamtkostenübersicht 
+
+# |Kostenart|                                  | Betrag (€)|
+|Personalkosten (kalkulatorisch)|              |ca. 19.800 – 24.900|
+|Technische Aufwände|                          |ca. 2.100 – 2.900|
+|Material & Sonstiges|                         |ca. 900 – 1.400|
+# |Gesamt|                                     |ca. 22.800 – 29.200|
+
+Diese Kosten spiegeln den realen wirtschaftlichen Aufwand wider, auch wenn sie im Studienkontext nicht tatsächlich anfallen.
+
+# Personalkosten
+
+# |Aufgabe|                              |Stunden|                    |Satz (€)|    | Kosten €|
+
+|Projektkoordination|                       |45|                        |55|        |2.475|
+|Anforderungsanalyse & Fachkonzept|         |70|                        |50|         |3.500|
+|Architektur & UML-Modellierung|            |80|                        |55|         |4.400|
+|Validierungs- & Regelkonzept|              |55|                        |60|         |3.300|
+|Testplanung & Qualitätssicherung|          |45|                        |50|         |2.250|
+|Dokumentation|                             |75|                        |45|         |3.375|
+| Präsenation & Vorbereitung                |25|                        |45|         |1.125|
+| Tooling & Struktur|                       |20|                        |55|         |1.100|
+# Summe                                     |415|                                    |21.525|
+
+
+# Technische Aufwände (6 Teammitglieder)
+# Kategoie                               Kosten (€)
+- Office 365 Business Standard            ca. 288
+- Kollaborationstools                     ca. 80
+- Cloud-Speicher                          ca. 40
+- Test-Hosting                            ca. 100
+- Hardware-Abschreibung (Laptops/PCs)     ca. 792
+- Hardware-Abschreibung (Firmenhandys)    ca. 408
+- Internetkosten                          ca. 720
+# Summe                                   ca. 2.428
+
+
+# Risiken
+
+## Technische Risiken 
+
+- Unvollständige oder fehlerhafte Daten aus ERP-Systemen können Validierungsfehler verursachen.
+
+- Änderungen an Rechnungsstandards erfordern kontinuierliche Pflege der Validierungslogik.
+
+- SMTP-Zustellbestätigungen liefern keine fachliche Empfangsbestätigung.
+
+# Rechtliche und organisatorische Risiken
+
+- Datenschutzanforderungen (DSGVO) erfordern klare Rollen- und Zugriffskonzepte.
+
+- Revisionssichere Archivierung muss unveränderbar und nachvollziehbar umgesetzt werden.
+
+
+# Markt- und Projektrisiken
+
+- Hoher Wettbewerbsdruck durch etablierte ERP-Hersteller.
+
+- Verzögerte Marktdurchdringung durch zögerliche KMU.
+
+- Gefahr der Überfrachtung des Projekts durch zu großen Funktionsumfang.
+
+# Vergleich mit bestehenden Lösungen
+
+# |Kategorie|                           |Typische Lösungen|                     | Abgrenzung Rechnung 4.0|
+
+| ERP-Systeme|                          | SAP, Dynamics|                        | Rechnung 4.0 als schlankes Modul|
+| Buchhaltungstools|                    | Lexware, sevDesk|                     | Fokus auf Automatisierung statt UI|
+| Rechnunsgtools|                       | easybill, Billomat|                   | Erweiterung um Lifecycle-Management|
+| PEPPOL-Plattformen|                    | Basware, Pagero |                     | Geringere Komplexität | 
+| Entwicklerlösungen|                   | XML-Validatoren |                     | Ergänzung um Prozesslogik | 
+
+
+# Zusammenfassung 
+
+Rechnung 4.0 stellt keine isolierte Rechnungserstellung dar, sondern eine prozessuale Automatisierungslösung. Durch die Kombination aus Validierung, Versand, Statusüberwachung und Mahnwesen bietet das System einen strukturierten, nachvollziehbaren und gesetzeskonformen Ansatz, der bestehende Lösungen sinnvoll ergänzt.
+  
+
+
+
 ## Randinformationen mit denen wir arbeiten müssen
 ### Stand der Technik – Elektronische Rechnungssysteme
 1. Überblick über den aktuellen Stand der Technik
