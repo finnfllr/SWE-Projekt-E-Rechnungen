@@ -106,7 +106,7 @@ Der Validierungsprozess ist wie eine dreistüfige Prüfkette konzipiert, die jed
 **Technik**: Validierung mittels javax.xml.validation gegen die offiziellen XSD-Schemata (ZUGFeRD/XRechnung).<br/><br/>
 
 **Stufe 3: Semantische Business-Rule-Validierung (Schematron)** <br/><br/>
-**Inhalt**: Prüfung komplexer Geschäftsregeln (z. B. länderspezifische Umsatzsteuersätze).<br/><br/>
+**Inhalt**: Prüfung komplexer Geschäftsregeln.<br/><br/>
 **Technik**: Abgleich gegen nationale Geschäftsregeln (Schematron), um die rechtliche Compliance für den Versand sicherzustellen.<br/><br/>
 
 
