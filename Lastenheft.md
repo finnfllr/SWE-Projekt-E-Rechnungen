@@ -96,20 +96,18 @@ Um die zeitliche Abfolge der Mahnung sicherzustellen, ist folgender Ablauf defin
 ### 3.4. Technischer Validierungsprozess
 Der Validierungsprozess ist wie eine dreistüfige Prüfkette konzipiert, die jede Rechnung durchlaufen muss, um den Statuswechsel zu "VALIDIERUNG_OK" zu gelangen. 
 
-**Schritt 1: Mathematische & Logische Validierung**
-Inhalt: Prüfung der Datenintegrität und Berechnungsgenauigkeit.
-Technik: Nutzung von java.math.BigDecimal zur Verifizierung von Netto-, Steuer- und Bruttobeträgen.
-Ziel: Ausschluss von Rundungsfehlern und Prüfung auf Vollständigkeit der Pflichtfelder gemäß EN 16931.
+**Schritt 1: Mathematische & Logische Validierung** <br/><br/>
+**Inhalt**: Prüfung der Datenintegrität und Berechnungsgenauigkeit.<br/><br/>
+**Technik**: Nutzung von java.math.BigDecimal zur Verifizierung von Netto-, Steuer- und Bruttobeträgen.<br/><br/>
+**Ziel**: Ausschluss von Rundungsfehlern und Prüfung auf Vollständigkeit der Pflichtfelder gemäß EN 16931.<br/><br/>
 
-**Schritt 2: Syntaktische XML-Schema-Validierung**
-Inhalt: Prüfung der strukturellen Konformität des generierten XML-Containers.
+**Schritt 2: Syntaktische XML-Schema-Validierung** <br/><br/>
+**Inhalt**: Prüfung der strukturellen Konformität des generierten XML-Containers.<br/><br/>
+**Technik**: Validierung mittels javax.xml.validation gegen die offiziellen XSD-Schemata (ZUGFeRD/XRechnung).<br/><br/>
 
-Technik: Validierung mittels javax.xml.validation gegen die offiziellen XSD-Schemata (ZUGFeRD/XRechnung).
-
-**Stufe 3: Semantische Business-Rule-Validierung (Schematron)**
-Inhalt: Prüfung komplexer Geschäftsregeln (z. B. länderspezifische Umsatzsteuersätze).
-
-Technik: Abgleich gegen nationale Geschäftsregeln (Schematron), um die rechtliche Compliance für den Versand sicherzustellen.
+**Stufe 3: Semantische Business-Rule-Validierung (Schematron)** <br/><br/>
+**Inhalt**: Prüfung komplexer Geschäftsregeln (z. B. länderspezifische Umsatzsteuersätze).<br/><br/>
+**Technik**: Abgleich gegen nationale Geschäftsregeln (Schematron), um die rechtliche Compliance für den Versand sicherzustellen.<br/><br/>
 
 
 ## 4. Nicht-funktionale Anforderungen (Qualitätssicherung)
