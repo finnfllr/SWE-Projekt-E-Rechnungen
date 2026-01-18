@@ -22,7 +22,7 @@ Das System „Rechnung Digital“ ist eine Softwarelösung zur automatisierten E
 | :--- | :--- | :--- | :--- |
 | **1** | **Anmeldung** | | |
 | 1.1 | ERP | Rechnung erstelllen | Wenn Validierung fehlschlägt → A1 |
-| 1.2 | ERP | Validierund durschüfhren |  |
+| 1.2 | ERP | Validierund durchführen |  |
 | 1.3 | ERP | E-Rechnung versenden |  |
 | 1.4 | Zeitsteuerung | Zahlungeingang prüfen | Wenn Zahlung ausbleibt → E1.1 |
 | **Ausnahmen** |  |  |  |
@@ -92,6 +92,25 @@ Um die zeitliche Abfolge der Erstellung sicherzustellen, ist folgender Ablauf de
 
 Um die zeitliche Abfolge der Mahnung sicherzustellen, ist folgender Ablauf definiert:
 ![Sequenzdiagramm-Mahnung](https://github.com/finnfllr/SWE-Projekt-E-Rechnungen/blob/main/Images/SequenzDiagramm%20Mahnung.png)
+
+### 3.4. Technischer Validierungsprozess
+Der Validierungsprozess ist wie eine dreistüfige Prüfkette konzipiert, die jede Rechnung durchlaufen muss, um den Statuswechsel zu "VALIDIERUNG_OK" zu gelangen. 
+
+**Schritt 1: Mathematische & Logische Validierung**
+Inhalt: Prüfung der Datenintegrität und Berechnungsgenauigkeit.
+Technik: Nutzung von java.math.BigDecimal zur Verifizierung von Netto-, Steuer- und Bruttobeträgen.
+Ziel: Ausschluss von Rundungsfehlern und Prüfung auf Vollständigkeit der Pflichtfelder gemäß EN 16931.
+
+**Schritt 2: Syntaktische XML-Schema-Validierung**
+Inhalt: Prüfung der strukturellen Konformität des generierten XML-Containers.
+
+Technik: Validierung mittels javax.xml.validation gegen die offiziellen XSD-Schemata (ZUGFeRD/XRechnung).
+
+**Stufe 3: Semantische Business-Rule-Validierung (Schematron)**
+Inhalt: Prüfung komplexer Geschäftsregeln (z. B. länderspezifische Umsatzsteuersätze).
+
+Technik: Abgleich gegen nationale Geschäftsregeln (Schematron), um die rechtliche Compliance für den Versand sicherzustellen.
+
 
 ## 4. Nicht-funktionale Anforderungen (Qualitätssicherung)
 - Performance: Die Validierung einer Rechnung muss in unter 150 ms erfolgen, um auch Massenverarbeitungen nicht zu verzögern.
